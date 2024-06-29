@@ -1,0 +1,12 @@
+# to create db
+use dbname
+
+#to insert a collection in the db
+db.exampledb.insertOne({id:2,name:"shukla",age:21})
+
+#to check collections in db
+db.dbname.find()
+
+
+#to close the mongodb server
+ db.shutdownServer()

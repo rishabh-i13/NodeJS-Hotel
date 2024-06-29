@@ -1,0 +1,11 @@
+{
+    "name": "Rishabh",
+    "age": 23,
+    "work": "coder",
+    "mobile": "8953776640",
+    "email": "rishabh@gmail.com",
+    "address": "Sultanpur UP",
+    "salary": 50000
+}
+
+Data sent in by POST method
