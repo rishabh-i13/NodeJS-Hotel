@@ -5,7 +5,7 @@ dotenv.config();
 
 //Defining the MongoDB URL
 
-// const mongoURL='mongodb://localhost:27017/hotels'; // hotels is the name of the data base
+const mongoURL=process.env.MONGO_URL_LOCAL; // hotels is the name of the data base
 const onlineMongoURL=process.env.MONGO_URL
 
 mongoose.connect(onlineMongoURL,{
