@@ -4,6 +4,9 @@ const app = express()
 // const db= require('./db');
 import db from './db.js';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 
 import bodyParser from "body-parser";
 app.use(bodyParser.json());

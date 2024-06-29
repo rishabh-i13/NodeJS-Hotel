@@ -1,13 +1,14 @@
 import mongoose from "mongoose";
+import dotenv from 'dotenv';
+dotenv.config();
 // const mongoose=require("mongoose");
 
 //Defining the MongoDB URL
 
-const mongoURL='mongodb://localhost:27017/hotels'; // hotels is the name of the data base
+// const mongoURL='mongodb://localhost:27017/hotels'; // hotels is the name of the data base
+const onlineMongoURL=process.env.MONGO_URL
 
-//setting up the mongoDB connection
-
-mongoose.connect(mongoURL,{
+mongoose.connect(onlineMongoURL,{
     useNewUrlParser:true,
     useUnifiedTopology:true
 });
